@@ -10,7 +10,9 @@ namespace _13_3uzd
     {
         static void Main(string[] args)
         {
-            
+            //fhghgfgh
+            //fdfdf
+            Console.WriteLine("hello");
         }
     }
 }
