@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Threading;
 
-namespace _1_1uzduotis
+namespace _9_4uzd
 {
     class Program
     {
@@ -13,10 +12,8 @@ namespace _1_1uzduotis
         {
             for (int i = 0; i < 10; i++)
             {
-                Thread.Sleep(10000);
-                Console.WriteLine(i);
+                if (i % 2 == 0) { Console.WriteLine(i); }
             }
-
         }
     }
 }

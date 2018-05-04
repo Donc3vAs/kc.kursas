@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Threading;
 
-namespace _1_1uzduotis
+namespace _10_2uzd
 {
     class Program
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 10; i++)
+            var a = Convert.ToInt32(Console.ReadLine());
+            while (a < 1)
             {
-                Thread.Sleep(10000);
-                Console.WriteLine(i);
+                Console.Write(a + " ");
+                a++;
             }
-
         }
     }
 }

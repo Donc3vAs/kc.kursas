@@ -3,20 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Threading;
 
-namespace _1_1uzduotis
+namespace ue1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 10; i++)
+            var sum = 0;
+            for (int i = 0; i < 1000; i++)
             {
-                Thread.Sleep(10000);
-                Console.WriteLine(i);
+                if (i%3==0 || i%5==0 )
+                {
+                    sum += i;
+                }
             }
-
+            Console.WriteLine(sum);
         }
     }
 }
