@@ -13,7 +13,7 @@ namespace _14_3uzd
             var pr = new Program();
             var skaic = pr.listas();
             var suma = pr.suma(skaic);
-            Console.Write("[ ");
+            Console.Write("[");
             /*foreach (var sk in skaic)
             {
                 Console.Write(sk + " ");
@@ -27,7 +27,7 @@ namespace _14_3uzd
                 }
 
             }
-            Console.Write(" ]");
+            Console.Write("]");
             Console.WriteLine();
             pr.avr(suma, skaic);
         }
@@ -44,7 +44,7 @@ namespace _14_3uzd
         public int suma(List<int> a)
         {
             int sum = a.Sum();
-            Console.WriteLine("suma: " + a.Sum());
+            Console.WriteLine("Bendra suma: " + a.Sum());
             return sum;
         }
         public void avr(int a, List<int> b)
