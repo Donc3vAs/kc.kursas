@@ -13,17 +13,28 @@ namespace _14_3uzd
             var pr = new Program();
             var skaic = pr.listas();
             var suma = pr.suma(skaic);
-            foreach (var sk in skaic)
+            Console.Write("[ ");
+            /*foreach (var sk in skaic)
             {
                 Console.Write(sk + " ");
+            }*/
+            for (int i = 0; i < skaic.Count; i++)
+            {
+                Console.Write(skaic[i]);
+                if (i != skaic.Count-1)
+                {
+                    Console.Write(", ");
+                }
+
             }
+            Console.Write(" ]");
             Console.WriteLine();
             pr.avr(suma, skaic);
         }
         public List<int> listas()
         {
             var lst = new List<int>();
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine("Ivest skaiciu");
                 lst.Add(Convert.ToInt32(Console.ReadLine()));
@@ -38,7 +49,7 @@ namespace _14_3uzd
         }
         public void avr(int a, List<int> b)
         {
-            Console.WriteLine("vidurkis: " + a/b.Count());
+            Console.WriteLine("vidurkis: " + (double)a/b.Count());
         }
     }
 }
