@@ -19,6 +19,7 @@ namespace _5_4uzd
             if ((a+b+c+d+e)/5>=5)
             {
                 Console.WriteLine("wuhu tavo vidurkis neblogas");
+                Console.WriteLine("aa");
             }
         }
     }
