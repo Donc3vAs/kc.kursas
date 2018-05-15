@@ -213,6 +213,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scrap", "Scrap\Scrap.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teleloto", "Teleloto\Teleloto.csproj", "{648BD470-8C19-4E5E-8EB5-DA835B2A0B3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "skaiciuotuvas", "skaiciuotuvas\skaiciuotuvas.csproj", "{C84EDF66-4CB0-4CCF-AD5C-67C6D2330FC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -563,6 +565,10 @@ Global
 		{648BD470-8C19-4E5E-8EB5-DA835B2A0B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{648BD470-8C19-4E5E-8EB5-DA835B2A0B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{648BD470-8C19-4E5E-8EB5-DA835B2A0B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C84EDF66-4CB0-4CCF-AD5C-67C6D2330FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C84EDF66-4CB0-4CCF-AD5C-67C6D2330FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C84EDF66-4CB0-4CCF-AD5C-67C6D2330FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C84EDF66-4CB0-4CCF-AD5C-67C6D2330FC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -654,6 +660,7 @@ Global
 		{4D50EEBE-97E7-40CC-AED3-B8FF828ED698} = {41AAEB3A-493D-4FCB-A3DD-062C2B53F974}
 		{A71280F4-A376-44F2-8C25-0C8E0065F961} = {41AAEB3A-493D-4FCB-A3DD-062C2B53F974}
 		{648BD470-8C19-4E5E-8EB5-DA835B2A0B3B} = {41AAEB3A-493D-4FCB-A3DD-062C2B53F974}
+		{C84EDF66-4CB0-4CCF-AD5C-67C6D2330FC8} = {41AAEB3A-493D-4FCB-A3DD-062C2B53F974}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3973CEBD-3CB7-42AE-93A8-F98A5BEA6E47}
