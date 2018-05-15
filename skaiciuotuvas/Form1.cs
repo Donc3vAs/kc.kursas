@@ -16,107 +16,88 @@ namespace skaiciuotuvas
         {
             InitializeComponent();
         }
-
-        Button mygtukasn = new Button();
-        Button mygtukasz = new Button();
         Double sk1 = 0;
         Double sk2 = 0;
         bool k = false;
         bool j = false;
         private void b1_Click(object sender, EventArgs e)
         {
-            mygtukasn = b1;
             sk(b1);
         }
 
         private void b2_Click(object sender, EventArgs e)
         {
-            mygtukasn = b2;
-            sk(mygtukasn);
+            sk(b2);
         }
 
         private void b3_Click(object sender, EventArgs e)
         {
-            mygtukasn = b3;
-            sk(mygtukasn);
+            sk(b3);
         }
 
         private void b4_Click(object sender, EventArgs e)
         {
-            mygtukasn = b4;
-            sk(mygtukasn);
+            sk(b4);
         }
 
         private void b5_Click(object sender, EventArgs e)
         {
-            mygtukasn = b5;
-            sk(mygtukasn);
+            sk(b5);
         }
 
         private void b6_Click(object sender, EventArgs e)
         {
-            mygtukasn = b6;
-            sk(mygtukasn);
+            sk(b6);
         }
 
         private void b7_Click(object sender, EventArgs e)
         {
-            mygtukasn = b7;
-            sk(mygtukasn);
+            sk(b7);
         }
 
         private void b8_Click(object sender, EventArgs e)
         {
-            mygtukasn = b8;
-            sk(mygtukasn);
+            sk(b8);
         }
 
         private void b9_Click(object sender, EventArgs e)
         {
-            mygtukasn = b9;
-            sk(mygtukasn);
+            sk(b9);
         }
 
         private void b0_Click(object sender, EventArgs e)
-        {            
-                mygtukasn = b0;
-                sk(mygtukasn);                        
+        {
+            sk(b0);
         }
 
         private void bd_Click(object sender, EventArgs e)
         {
-            mygtukasz = bd;
-            zn(mygtukasz);
+            zn(bd);
         }
 
         private void bp_Click(object sender, EventArgs e)
         {
-            mygtukasz = bp;
-            zn(mygtukasz);
+            zn(bp);
         }
 
         private void bm_Click(object sender, EventArgs e)
         {
-            mygtukasz = bm;
-            zn(mygtukasz);
+            zn(bm);
         }
 
         private void bdg_Click(object sender, EventArgs e)
         {
-            mygtukasz = bdg;
-            zn(mygtukasz);
+            zn(bdg);
         }
 
         private void bda_Click(object sender, EventArgs e)
         {
-            mygtukasz = bda;
-            zn(mygtukasz);
+            zn(bda);
         }
 
         private void be_Click(object sender, EventArgs e)
         {
-            mygtukasz = be;
-            zn(mygtukasz);
+            zn(be);
         }
 
 
@@ -137,13 +118,14 @@ namespace skaiciuotuvas
             {
                 laukas.Text += x.Text;
                 veiksmas.Text += x.Text;
-            }            
+            }
         }
 
         // zenklai
-        private void zn (Button x)
+        private void zn(Button x)
         {
-            if (x.Text != "," & x.Text != "=")
+            if (veiksmas.Text == ""|| !char.IsNumber(veiksmas.Text[veiksmas.Text.Length-1])) { }
+            else if (x.Text != "," & x.Text != "=")
             {
                 if (laukas.Text == veiksmas.Text)
                 {
@@ -159,16 +141,9 @@ namespace skaiciuotuvas
                     veiksmas.Text += x.Text;
                     k = true;
                 }
-            }            
+            }
             else if (x.Text == ",")
-            {
-                if (x.Text == "," & laukas.Text == "")
-                {
-                    laukas.Text = "0,";
-                    veiksmas.Text = "0,";
-                }
-                else
-                {
+            {                
                     foreach (var n in laukas.Text)
                     {
                         if (n == ',')
@@ -182,9 +157,8 @@ namespace skaiciuotuvas
                         laukas.Text += x.Text;
                         j = false;
                     }
-                }
             }
-            else if (x.Text == "=")
+            else if (x.Text == "=" & veiksmas.Text[veiksmas.Text.Length - laukas.Text.Length - 1] != '=')
             {
                 sk2 = Convert.ToDouble(laukas.Text);
                 sk1 = vk(sk1, sk2, veiksmas.Text[veiksmas.Text.Length - laukas.Text.Length - 1]);
@@ -199,6 +173,16 @@ namespace skaiciuotuvas
             else if (z == '*') { x *= y; }
             else if (z == '/') { x /= y; }
             return x;
+        }
+
+        private void bce_Click(object sender, EventArgs e)
+        {
+            Double sk1 = 0;
+            Double sk2 = 0;
+            bool k = false;
+            bool j = false;
+            veiksmas.Text = null;
+            laukas.Text = null;
         }
     }
 }

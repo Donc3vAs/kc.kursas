@@ -46,6 +46,7 @@
             this.bp = new System.Windows.Forms.Button();
             this.laukas = new System.Windows.Forms.TextBox();
             this.veiksmas = new System.Windows.Forms.Label();
+            this.bce = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // b1
@@ -228,11 +229,22 @@
             this.veiksmas.TabIndex = 17;
             this.veiksmas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // bce
+            // 
+            this.bce.Location = new System.Drawing.Point(91, 274);
+            this.bce.Name = "bce";
+            this.bce.Size = new System.Drawing.Size(41, 37);
+            this.bce.TabIndex = 18;
+            this.bce.Text = "CE";
+            this.bce.UseVisualStyleBackColor = true;
+            this.bce.Click += new System.EventHandler(this.bce_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 342);
+            this.Controls.Add(this.bce);
             this.Controls.Add(this.veiksmas);
             this.Controls.Add(this.laukas);
             this.Controls.Add(this.bp);
@@ -278,6 +290,7 @@
         private System.Windows.Forms.Button bp;
         private System.Windows.Forms.Label veiksmas;
         private System.Windows.Forms.TextBox laukas;
+        private System.Windows.Forms.Button bce;
     }
 }
 
